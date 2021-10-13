@@ -10,7 +10,7 @@ jobs:
                   keys:
                       # Find a cache corresponding to this specific requirements.txt checksum
                       # when this file is changed, this key will fail
-                      - {{ checksum "requirements.txt" }}
+                      -  checksum "requirements.txt" 
                       # Find the most recently generated cache used from any branch
                       - v1-pip-deps-
 
@@ -21,7 +21,7 @@ jobs:
                       source ~/.devops/bin/activate
                       make install
             - save_cache:
-                  key: {{ checksum "requirements.txt" }}
+                  key:  "requirements.txt"
                   paths:
                       - ~/.devops
 
