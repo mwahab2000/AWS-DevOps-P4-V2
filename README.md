@@ -92,12 +92,7 @@ $ . ./make_prediction.sh # Don't forget run the container before
 > **Note:** If you don't see any logs on your terminal you can use the `docker logs` command, to get container id of your docker app you can use `docker ps` and used that with the `docker logs` command. e.g: `docker ps` and the container id is `4c01db0b339c` your command to get the logs is `docker logs 4c01db0b339c`
 
 ```sh
-$ docker ps
 
-CONTAINER ID        IMAGE                        COMMAND                CREATED              STATUS              PORTS               NAMES
-4c01db0b339c        ubuntu:12.04                 bash                   17 seconds ago       Up 16 seconds       3300-3310/tcp       webapp
-d7886598dbe2        crosbymichael/redis:latest   /redis-server --dir    33 minutes ago       Up 33 minutes       6379/tcp            redis,webapp/db
-```
 
 > **Note:** Don't forget copy the output to `docker_out.txt`
 
