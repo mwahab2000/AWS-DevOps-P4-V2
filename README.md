@@ -105,7 +105,7 @@ d7886598dbe2        crosbymichael/redis:latest   /redis-server --dir    33 minut
 
 -   Create a [Docker Hub](https://hub.docker.com/) account
 -   Built the docker container with this command `docker build --tag=<your_tag> .` **(Don't forget the tag name)**
--   Define a `dockerpath` which is `<docker_hub_username>/<project_name>` e.g: `minorpath/kubernetes-p4`
+-   Define a `dockerpath` which is `<docker_hub_username>/<project_name>` e.g: `mwahab2000/udacity-aws-p4`
 -   Authenticate and tag image
 -   Push your docker image to the `dockerpath`
 
